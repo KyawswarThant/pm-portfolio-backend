@@ -9,34 +9,37 @@
 #   end
 
 #Articles
-Article.create!(
+Article.find_or_create_by!(
   title: "Lämmitys Jarjestelmaa",
   description: "Lämmonjakohuonessa kiinteistönhoitaja pitää tarkistaa...",
-  article: 
-    "Lämmonjakohuonessa kiinteistönhoitaja pitää tarkistaa paineita ja lämpötiloja.
+  article: <<~TEXT,
+    Lämmonjakohuonessa kiinteistönhoitaja pitää tarkistaa paineita ja lämpötiloja.
     Kaukolämpö menoveden ja paluuveden paine pitää olla eri. Jos se on sama, se voi olla mudanerotin tukossa.
     Ja sitten lämmitys verkoston paine pitää olla oikein. Jos se on vähemmän, voi täyttää lisää lämmin vettä lämmin käyttö veden verkosta.
     Lämpimän veden lämpötila pitää olla 55 astetta ja 65 astetta valilla. Vanha kiinteistössä voi olla 50 astetta ja 65 astetta valilla.
-    Säätöventtili pitää olla oikein säädetty, jos se ei ole samaa kuin merkkikilvessä, se pitää säätää oikein. Ja sitten pitää tarkistaa että onko se jotain lämmönsiirtimen sisäinen vuoto.",
+    Säätöventtili pitää olla oikein säädetty, jos se ei ole samaa kuin merkkikilvessä, se pitää säätää oikein. Ja sitten pitää tarkistaa että onko se jotain lämmönsiirtimen sisäinen vuoto.
+    TEXT
   image: "/lammonjakohuone.jpg",
   buttonText: "lisää"
 )
 
-Article.create!(
+Article.find_or_create_by!(
   title: "Hana huolto(säätöosan vaihto)",
   description: "Kun hana vuotaa poresuuttimesta vivun ollessa suljettuna...",
-  article: "Kun hana vuotaa poresuuttimesta vivun ollessa suljettuna.\n
-    Sulje vedentulo hanalle.\n
-    Irrota käyttövipu ja suojakuppi.\n
-    Irrota säätöosan kiristysmutteri.\n
-    Vedä säätöosa pois.\n
-    Asenna uusi säätöosa paikalleen.\n
-    Kokoa hana.",
+  article: <<~TEXT,
+    Kun hana vuotaa poresuuttimesta vivun ollessa suljettuna.
+    Sulje vedentulo hanalle.
+    Irrota käyttövipu ja suojakuppi.
+    Irrota säätöosan kiristysmutteri.
+    Vedä säätöosa pois.
+    Asenna uusi säätöosa paikalleen.
+    Kokoa hana.
+    TEXT
   image: "/hana.webp",
   buttonText: "lisää",
 )
 
-Article.create!(
+Article.find_or_create_by!(
   title: "WC-vuotto",
   description: "WC-vuotto voi johtua useista syistä...",
   article: "",
@@ -44,17 +47,18 @@ Article.create!(
   buttonText: "lisää",
 )
 
-Article.create!(
+Article.find_or_create_by!(
   title: "Hana huolto(säätöosan vaihto)",
   description: "Kun hana vuotaa poresuuttimesta vivun ollessa suljettuna...",
-  article: 
-    "Kun hana vuotaa poresuuttimesta vivun ollessa suljettuna.\n
-    Sulje vedentulo hanalle.\n
-    Irrota käyttövipu ja suojakuppi.\n
-    Irrota säätöosan kiristysmutteri.\n
-    Vedä säätöosa pois.\n
-    Asenna uusi säätöosa paikalleen.\n
-    Kokoa hana.",
+  article: <<~TEXT,
+    Kun hana vuotaa poresuuttimesta vivun ollessa suljettuna.
+    Sulje vedentulo hanalle.
+    Irrota käyttövipu ja suojakuppi.
+    Irrota säätöosan kiristysmutteri.
+    Vedä säätöosa pois.
+    Asenna uusi säätöosa paikalleen.
+    Kokoa hana.
+    TEXT
   image: "/hana.webp",
   buttonText: "lisää",
 )
