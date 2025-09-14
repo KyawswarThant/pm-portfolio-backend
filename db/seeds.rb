@@ -39,7 +39,7 @@ Article.create!(
 Article.create!(
   title: "WC-vuotto",
   description: "WC-vuotto voi johtua useista syistä...",
-  article: ""
+  article: "",
   image: "/IDO59.png",
   buttonText: "lisää",
 )
