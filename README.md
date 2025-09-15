@@ -1,24 +1,29 @@
-# README
+# PM Portfolio Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the backend API for the [Property Manager Portfolio app](https://property-manager-portfolio.vercel.app/).  
+It provides endpoints for displaying articles and work experiences.
 
-Things you may want to cover:
 
-* Ruby version
+## 🚀 Tech Stack
+- Ruby (Rails API)
+- PostgreSQL
 
-* System dependencies
 
-* Configuration
+## ⚙️ Setup
 
-* Database creation
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/KyawswarThant/pm-portfolio-backend.git
+   cd pm-portfolio-backend
 
-* Database initialization
+2.	Install dependencies:
+  	```bash
+    bundle install
 
-* How to run the test suite
+3.	Setup the database:
+    ```bash
+    rails db:create db:migrate db:seed
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+4.	Start the server:
+    ```bash
+    rails server
