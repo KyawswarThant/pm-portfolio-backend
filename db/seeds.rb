@@ -40,14 +40,6 @@ Article.find_or_create_by!(
 )
 
 Article.find_or_create_by!(
-  title: "WC-vuotto",
-  description: "WC-vuotto voi johtua useista syistä...",
-  article: "",
-  image: "/IDO59.png",
-  buttonText: "lisää",
-)
-
-Article.find_or_create_by!(
   title: "Isännöitsijä ja kiinteistönhoitaja",
   description: "Isännöitsijä on kiinteistön omistajan edustaja...",
   article: <<~TEXT,
@@ -106,6 +98,6 @@ Article.find_or_create_by!(
 
     Tällainen tilanne osoittaa, kuinka tärkeää on yhteistyö – kiinteistönhoitaja tuo tiedon kentältä, isännöitsijä hoitaa hallinnolliset toimet.
     TEXT
-  image: "/hana.webp",
+  image: "/kh_isan.png",
   buttonText: "lisää",
 )
